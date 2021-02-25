@@ -14,6 +14,8 @@
 
 5. It does use json under the hood to facilitate the transferring of the data between server and client.
 
+> You can `pip install ujson` if you want the server to encode/decode faster. 
+
 ```python
 from datetime import date
 import serializer
