@@ -1,18 +1,18 @@
 # serializer
 
-### Made for transfering data between brython and a python webserver.
+### Made for transferring data between brython and a python webserver.
 
 1. An issue with JSON is it can't serialize python's datetime classes very well.  YAML doesn't play well with brython.
 
 2. I needed a way to send `datetime.date` and `datetime.time` to the client. This serializer might not be the best thing
-   for this but it does what it needed.
+   for this, but it does what is needed.
    
-3. I also send quite a bit of data from the server that is exactly the same, this was written to assist in making the 
-   transfer time smaller.
+3. I also send quite a bit of data from the server that is has multiple reused strings and numbers, this was written to
+   assist in making the transfer time smaller.
    
 4. Any python structure, nested or not can be passed.
 
-5. It does use json under the hood to faciliate the transfering of the data between server and client.
+5. It does use json under the hood to facilitate the transferring of the data between server and client.
 
 ```python
 from datetime import date
